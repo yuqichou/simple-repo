@@ -1,0 +1,11 @@
+description: My first application
+engine: gotpl
+maintainers:
+- email: zhouyuqi.master@gmail.com
+  name: yuqichou
+name: java-app
+sources:
+- https://github.com/yuqichou
+version: 1.0.0
+appVersion: 1.0.0
+kubeVersion: "^1.8.0-0"
