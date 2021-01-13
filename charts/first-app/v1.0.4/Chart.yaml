@@ -6,6 +6,6 @@ maintainers:
 name: java-app
 sources:
 - https://github.com/yuqichou
-version: 1.0.3
+version: 1.0.4
 appVersion: 1.0.0
 kubeVersion: "^1.8.0-0"
