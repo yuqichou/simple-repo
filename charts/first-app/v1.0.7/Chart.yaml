@@ -1,4 +1,3 @@
-apiVersion: v2
 description: My first application
 maintainers:
   - email: zhouyuqi.master@gmail.com
@@ -9,3 +8,5 @@ sources:
 version: 1.0.7
 appVersion: 1.0.0
 kubeVersion: "^1.8.0-0"
+engine: gotpl
+type: application
