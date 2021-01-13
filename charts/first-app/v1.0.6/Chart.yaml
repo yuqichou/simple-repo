@@ -1,11 +1,11 @@
+apiVersion: v2
 description: My first application
-engine: gotpl
 maintainers:
-- email: zhouyuqi.master@gmail.com
+  - email: zhouyuqi.master@gmail.com
   name: yuqichou
 name: java-app
 sources:
-- https://github.com/yuqichou
-version: 1.0.5
+  - https://github.com/yuqichou
+version: 1.0.6
 appVersion: 1.0.0
 kubeVersion: "^1.8.0-0"
