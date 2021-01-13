@@ -1,0 +1,10 @@
+categories:
+  - Tools
+questions:
+  - variable: replicaCount
+    default: "1"
+    description: "App replica count"
+    type: string
+    group: "App Settings"
+    label: 节点数量
+    required: true
