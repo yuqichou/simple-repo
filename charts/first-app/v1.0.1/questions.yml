@@ -1,0 +1,32 @@
+categories:
+  - Blog
+  - CMS
+  - Tools
+questions:
+  - variable: replicaCount
+    type: string
+    description: "节点数量"
+  - variable: persistence.enabled
+    default: "false"
+    description: "Enable persistent volume for WordPress"
+    type: boolean
+    required: true
+    label: 一个勾选框
+    show_subquestion_if: true
+    group: "WordPress Settings"
+    subquestions:
+      - variable: test.var
+        default: "default-value"
+        description: "这是一个默认的参数"
+        type: string
+        label: 输入这个默认参数值
+      - variable: persistence.size
+        default: "10Gi"
+        description: "WordPress Persistent Volume Size"
+        type: string
+        label: WordPress Volume Size
+      - variable: persistence.storageClass
+        default: ""
+        description: "If undefined or null, uses the default StorageClass. Default to null"
+        type: storageclass
+        label: Default StorageClass for WordPress
