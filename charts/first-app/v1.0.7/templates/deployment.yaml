@@ -3,34 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: java-app-v2
-  name: java-app-v2
+    app: java-app
+  name: java-app
 spec:
+  replicas: 1
   selector:
     matchLabels:
-      app: java-app-v2
-  replicas: 1
+      app: java-app
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: java-app-v2-label
+        app: java-app
     spec:
       containers:
         - image: zhouyeahyuqi/java-app:v2
-          name: java-app-v2
+          name: java-app
           resources: {}
-          livenessProbe:
-            httpGet:
-              path: /actuator/health/
-              port: 8080
-          readinessProbe:
-            httpGet:
-              path: /actuator/health/
-              port: 8080
-          lifecycle:
-            preStop:
-              exec:
-                command: ["sh", "-c", "sleep 10"]
 status: {}
