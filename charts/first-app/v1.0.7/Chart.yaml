@@ -1,12 +1,7 @@
-description: My first application
-maintainers:
-  - email: zhouyuqi.master@gmail.com
-  name: yuqichou
+apiVersion: v2
 name: java-app
-sources:
-  - https://github.com/yuqichou
+description: a java app
+type: application
 version: 1.0.7
 appVersion: 1.0.0
-kubeVersion: "^1.8.0-0"
-engine: gotpl
-type: application
+
