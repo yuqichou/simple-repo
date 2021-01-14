@@ -8,3 +8,10 @@ questions:
     group: "App Settings"
     label: 节点数量
     required: true
+  - variable: var-1
+      default: "1"
+      description: "自定义变量"
+      type: string
+      group: "App Settings"
+      label: 自定义变量
+      required: true
